@@ -1,4 +1,4 @@
-.header {
+.header, .header2 {
 
     background: rgb(0, 0, 0);
     background: linear-gradient(103deg, rgba(0, 0, 0, 0.8841911764705882) 1%, rgba(107, 69, 252, 0.861782212885154) 50%, rgba(0, 0, 0, 0.850577731092437) 100%);
@@ -207,10 +207,17 @@
     }
 
     .header {
+        display: none;
+    }
+
+    .header2{
         [class*="col-"] {
             width: 100%;
         }
-
+        .bx-menu{
+            width: 30%;
+            color: turquoise;
+        }
         background: rgb(0, 0, 0);
         background: linear-gradient(103deg, rgba(0, 0, 0, 0.8841911764705882) 1%, rgba(107, 69, 252, 0.861782212885154) 50%, rgba(0, 0, 0, 0.850577731092437) 100%);
 
@@ -232,7 +239,9 @@
 
 /* DE 600 HASTA 768 (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .header2 {
+        display: none;
+    }
     .col-s-1 {
         width: 8.33%;
     }

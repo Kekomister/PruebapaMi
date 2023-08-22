@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Prueba';
+  abre : boolean = false; 
+
+  abrir(){
+    this.abre = !this.abre;
+  }
 }
